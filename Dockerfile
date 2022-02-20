@@ -25,11 +25,11 @@ RUN apt-get update && apt-get upgrade --yes && \
   apt-get install -y \
     make \
     gawk \
-    gcc-4.9-multilib \
-    gcc-4.9-powerpc-linux-gnu \
+    gcc-4.8-multilib \
+    gcc-4.8-powerpc-linux-gnu \
   && \
-  ln -s /usr/bin/gcc-4.9 /usr/bin/gcc && \
-  ln -s /usr/bin/powerpc-linux-gnu-gcc-4.9 /usr/bin/powerpc-linux-gnu-gcc && \
-  ln -s /usr/bin/powerpc-linux-gnu-cpp-4.9 /usr/bin/powerpc-linux-gnu-cpp \
+  ln -s /usr/bin/gcc-4.8 /usr/bin/gcc && \
+  ln -s /usr/bin/powerpc-linux-gnu-gcc-4.8 /usr/bin/powerpc-linux-gnu-gcc && \
+  ln -s /usr/bin/powerpc-linux-gnu-cpp-4.8 /usr/bin/powerpc-linux-gnu-cpp \
   && \
   rm -rf /var/lib/apt/lists/*
